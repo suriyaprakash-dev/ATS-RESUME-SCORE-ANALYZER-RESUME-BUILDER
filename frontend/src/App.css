@@ -1,0 +1,159 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern Font */
+  background: linear-gradient(to right, #e3f2fd, #ffffff); /* Light gradient */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #1e3a5f;  /* Professional Dark Blue */
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .logo {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+  background: #162b4c;  /* Darker Blue Hover */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  background: white;
+  border-radius: 0 12px 12px 0;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #1e3a5f;
+  margin-bottom: 25px;
+}
+
+/* Upload Form */
+.upload-form {
+  text-align: center;
+  background: #f4f6f8;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form input[type="file"] {
+  margin-bottom: 15px;
+}
+
+.upload-form button {
+  background: #3498db;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.upload-form button:hover {
+  background: #2980b9;
+}
+
+/* Result Section */
+.result-container {
+  background: #ecf0f1;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.result-container h3 {
+  color: #1e3a5f;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Suggestions Section */
+.suggestions-container {
+  margin-top: 15px;
+}
+
+.suggestions-container h4 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
