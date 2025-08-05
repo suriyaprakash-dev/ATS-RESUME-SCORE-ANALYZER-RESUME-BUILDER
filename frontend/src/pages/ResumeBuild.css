@@ -1,0 +1,144 @@
+/* Resume Builder Container */
+
+.resume-build-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Heading Style */
+
+.resume-build-container h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #0c8eb6;
+}
+
+
+/* Form Layout */
+
+.resume-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Input Row (For side-by-side inputs) */
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Input Fields */
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    margin-bottom: 10px;
+    /* Added spacing below input fields */
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #777;
+}
+
+input:focus,
+textarea:focus {
+    background: #ffffff;
+    border: 2px solid #007bff;
+}
+
+
+/* Textarea */
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+
+/* Submit Button */
+
+button {
+    width: 100%;
+    padding: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+    /* Added spacing above the button */
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+
+/* Error Text */
+
+.error-text {
+    color: #ff4b2b;
+    font-size: 14px;
+    text-align: left;
+    margin-top: -8px;
+    margin-bottom: 10px;
+    /* Added spacing below error messages */
+    font-weight: bold;
+}
+
+
+/* Success Message */
+
+.success-text {
+    color: #28a745;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .resume-build-container {
+        width: 90%;
+        padding: 30px;
+    }
+    .form-row {
+        flex-direction: column;
+    }
+    input {
+        width: 100%;
+    }
+}
